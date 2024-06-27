@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="/utility/bulma.min.css">
+    <link rel="stylesheet" href="/utility/all.min.css">
+    <link rel="stylesheet" href="/utility/style.css">
+</head>
+<body>
+    <section class="section mt-4">
+        <div class="container">
+            <h1 class="title is-size-3">YT Video Downloader</h1>
+            <div class="field">
+                <label class="label">YouTube Link</label>
+                <div class="control">
+                    <input id="link-input" class="input" type="text" placeholder="Enter YouTube video link">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Download Path</label>
+                <div class="control">
+                    <input id="path-input" class="input" type="text" placeholder="Choose download path" readonly>
+                    <button id="choose-path-btn" class="button is-link mt-2 is-fullwidth"><i class="fa-solid fa-folder-closed"></i> <span>Choose Path</span></button>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button id="download-btn" class="button is-primary is-fullwidth"><i class="fa-solid fa-download"></i> <span>Download</span></button>
+                </div>
+            </div>
+            <p id="status-message"></p>
+        </div>
+    </section>
+</body>
+</html>
+<script src="main.js"></script>
+<script src="../eel.js"></script>
